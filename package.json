@@ -1,0 +1,109 @@
+{
+  "name": "t5l-studio",
+  "version": "0.3.0",
+  "description": "Editor moderno y abierto de interfaces para pantallas DWIN T5L (DGUS II). Alternativa a DGUS V7.6, compatible byte a byte con 13TouchFile.bin, 14ShowFile.bin y 22_Config.bin.",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omarchavezq/t5l-studio.git"
+  },
+  "homepage": "https://github.com/omarchavezq/t5l-studio",
+  "bugs": {
+    "url": "https://github.com/omarchavezq/t5l-studio/issues"
+  },
+  "keywords": [
+    "dwin",
+    "t5l",
+    "dgus",
+    "hmi",
+    "editor",
+    "electron",
+    "nextion-alternative"
+  ],
+  "private": true,
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "electron": "electron .",
+    "electron:dev": "set VITE_DEV=1 && electron .",
+    "app": "vite build && electron .",
+    "icon": "electron scripts/make-icon.cjs",
+    "dist": "npm run build && electron-builder --win nsis --x64",
+    "dist:dir": "npm run build && electron-builder --win dir --x64",
+    "ejemplo": "vite-node scripts/make-test-project.ts",
+    "verificar": "tsc --noEmit && vitest run && vite build && npm audit --omit=dev --audit-level=high"
+  },
+  "dependencies": {
+    "lucide-react": "0.460.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zustand": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.1",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "6.3.0",
+    "electron": "45.3.4",
+    "electron-builder": "^26.18.0",
+    "typescript": "5.6.3",
+    "vite": "8.3.8",
+    "vite-node": "6.0.0",
+    "vitest": "5.1.1"
+  },
+  "author": "Colaboradores de T5L Studio",
+  "build": {
+    "appId": "com.t5lstudio.editor",
+    "productName": "T5L Studio",
+    "copyright": "Copyright (c) 2026 colaboradores de T5L Studio",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "artifactName": "T5L-Studio-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "T5L Studio",
+      "installerLanguages": [
+        "es_ES"
+      ],
+      "language": "3082",
+      "uninstallDisplayName": "T5L Studio",
+      "deleteAppDataOnUninstall": false,
+      "include": "build/installer.nsh"
+    },
+    "fileAssociations": [
+      {
+        "ext": "dgusx",
+        "name": "Proyecto T5L Studio",
+        "description": "Proyecto de T5L Studio",
+        "role": "Editor"
+      }
+    ]
+  }
+}

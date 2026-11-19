@@ -1,0 +1,16 @@
+{
+  "id": "dmg10600t070-26w",
+  "nombre": "DMG10600T070_26W (7\" 1024×600, cámara FSK)",
+  "familia": "T5L",
+  "resolucion": [1024, 600],
+  "forma": "rectangular",
+  "flashMB": 32,
+  "firmware": { "escalaTextoII": true, "crcPorDefecto": false, "videoICL": true, "audioWAE": true, "camaraFSK": true },
+  "verificacion": "documentado",
+  "fuentes": [
+    "https://www.dwin-global.com/7-0-inch-fsk-bus-camera-scheme-screen-modeldmg10600t070_26w-product/",
+    "https://ecdn6.globalso.com/upload/p/1355/source/2024-11/Datasheet-DMG10600T070_26W.zip",
+    "https://ecdn6.globalso.com/upload/p/1355/source/2024-11/The-Development-Process-of-DWIN-26WSeries-Model-FSK-Bus-Camera-Screen1.pdf"
+  ],
+  "notas": "Variantes TC/TR con 32 MB según la ficha revisada. FSK por Imagen variable JPEG requiere GUI V49 o superior y cámara compatible; video ICL requiere GUI V50 compatible. No probado en pantalla. El control antiguo de cámara 0x31 no se presupone equivalente."
+}

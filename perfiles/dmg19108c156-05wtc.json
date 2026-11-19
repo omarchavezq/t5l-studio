@@ -1,0 +1,12 @@
+{
+  "id": "dmg19108c156-05wtc",
+  "nombre": "DMG19108C156_05WTC (15.6\" 1920×1080, 2K)",
+  "familia": "2K",
+  "resolucion": [1920, 1080],
+  "forma": "rectangular",
+  "flashMB": 32,
+  "firmware": { "escalaTextoII": true, "crcPorDefecto": false },
+  "verificacion": "documentado",
+  "fuentes": ["https://ecdn6.globalso.com/upload/p/1355/source/2025-09/DMG19108C156_05WTC4.pdf"],
+  "notas": "Plataforma 2K DGUS II con 32 MB y opciones de expansión."
+}

@@ -1,0 +1,27 @@
+name: Resultado de prueba en pantalla
+description: Cuente cómo funcionó un proyecto generado en una pantalla física
+labels: [hardware]
+body:
+  - type: input
+    id: pantalla
+    attributes:
+      label: Modelo de pantalla y firmware
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de T5L Studio
+    validations:
+      required: true
+  - type: textarea
+    id: resultado
+    attributes:
+      label: Resultado de la guía docs/PRUEBAS_HARDWARE.md
+      description: Qué pasos funcionaron y cuáles no.
+    validations:
+      required: true
+  - type: textarea
+    id: adjuntos
+    attributes:
+      label: Fotos o archivos

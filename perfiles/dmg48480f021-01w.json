@@ -1,0 +1,15 @@
+{
+  "id": "dmg48480f021-01w",
+  "nombre": "DMG48480F021_01W (2.1\" redonda 480×480, COF)",
+  "familia": "COF",
+  "resolucion": [480, 480],
+  "forma": "circular",
+  "flashMB": 8,
+  "firmware": { "escalaTextoII": false, "crcPorDefecto": false },
+  "verificacion": "documentado",
+  "fuentes": [
+    "https://ecdn6.globalso.com/upload/p/1355/source/2025-09/Datasheet-DMG48480F021_01W2.zip",
+    "https://ecdn6.globalso.com/upload/p/1355/source/2024-11/COF-Screen-Application-DevelopmentT5L_DGUSII20220610.pdf"
+  ],
+  "notas": "Pantalla circular con 8 MB. La guía COF de 2022 describe Texto DGUS II sin escala: se desactiva hasta probarlo."
+}

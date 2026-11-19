@@ -1,0 +1,12 @@
+{
+  "id": "dmg80480c070-04w",
+  "nombre": "DMG80480C070_04W (7\" 800×480, T5L0)",
+  "familia": "T5L",
+  "resolucion": [800, 480],
+  "forma": "rectangular",
+  "flashMB": 16,
+  "firmware": { "escalaTextoII": true, "crcPorDefecto": false },
+  "verificacion": "documentado",
+  "fuentes": ["https://ecdn6.globalso.com/upload/p/1355/source/2025-09/Datasheet-DMG80480C070_04W1.zip"],
+  "notas": "Ficha oficial: variantes con y sin táctil, DGUS II, 16 MB de flash."
+}

@@ -1,0 +1,14 @@
+name: Proponer una mejora
+description: Una función nueva o un cambio
+labels: [mejora]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Qué propone y para qué sirve
+    validations:
+      required: true
+  - type: textarea
+    id: v7
+    attributes:
+      label: ¿Cómo lo hace DGUS V7.6, si lo hace?

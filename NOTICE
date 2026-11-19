@@ -1,0 +1,20 @@
+T5L Studio
+Copyright (c) 2026 colaboradores de T5L Studio
+
+Este proyecto se distribuye bajo la licencia MIT o la licencia Apache 2.0, a
+elección de quien lo use (vea LICENSE-MIT y LICENSE-APACHE).
+
+T5L Studio es un proyecto independiente. No está afiliado, patrocinado ni
+respaldado por Beijing DWIN Technology Co., Ltd. DWIN, DGUS y T5L son marcas o
+denominaciones de productos de sus titulares y se mencionan solo para indicar
+compatibilidad.
+
+La compatibilidad con los archivos de DGUS II se logró por interoperabilidad, a
+partir de la documentación pública de DWIN y del análisis de los archivos que
+genera DGUS V7.6. Este repositorio no contiene código, binarios, fuentes,
+imágenes ni documentos de DWIN.
+
+El nombre y el logotipo de T5L Studio no están cubiertos por las licencias de
+código: las versiones modificadas que se distribuyan deben usar otro nombre.
+
+Las dependencias de terceros conservan sus licencias; vea ATTRIBUTION.md.
